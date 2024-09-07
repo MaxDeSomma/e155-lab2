@@ -9,20 +9,23 @@ module lab2_MD(
 	
 	
 	logic en;
-	logic ledOn = 0;
+	logic toggle = 0;
 	logic [24:0] counter = 0;
-		
+	
+	assign en = counter[24];
+	
 	// Simple clock divider
 	always_ff @(posedge int_osc) begin
-			counter <= counter + 1;
-			if(counter == 102416) begin
-					counter <= 0;
-					ledOn = ~ledOn;
-			end
+		counter <= counter + 1;
+		if (en) begin
+			toggle <= ~toggle;
 		end
+	end 
 	
-	assign led1 = ledOn;
-	assign led2 = ~ledOn; 
+	assign led1 = toggle;
+	assign led2 = ~toggle; 
+	assign ens = en;
+			
 				
 			
 endmodule
