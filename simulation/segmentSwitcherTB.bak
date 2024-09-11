@@ -1,0 +1,29 @@
+module segmentSwitcher_tb();
+ // Set up test signals
+ logic clk;
+ logic [3:0] s1,s2;
+ logic led1, led2;
+ logic [6:0] seg, seg_expected;
+ logic [31:0] vectornum, errors;
+ logic [13:0] testvectors[10000:0]; // Vectors of format s[3:0]_seg[6:0]
+
+ // Instantiate the device under test
+ segmentSwitcher dut(.s1(s1),.s2(s2), .clk(clk), .led1(led1),.led2(led2), .seg(seg), .sum(sum));
+
+ // Generate clock signal with a period of 10 timesteps.
+ always
+   begin
+     clk = 1; #5;
+     clk = 0; #5;
+   end
+
+initial
+ begin
+	s1 = 4'b0000;
+	s2 = 4'b1111;
+	#20;
+	s1 = 4'b1000;
+	s2 = 4'b0001;
+	#20;
+ end
+endmodule

@@ -9,29 +9,107 @@ z2
 !i10f 100
 cModel Technology
 dC:/lscc/radiant/3.2/modeltech/win32loem
-vlab2TopSim
-DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1725845431
+vledSum
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1726011876
 !i10b 1
-!s100 E[k`@^zG5ObzN1gaUg@4=1
-I]BiNi_M4;5zeYzkM2H[<N0
+!s100 i`QX@b6PW;5Ln9I60Q55d0
+Ii;X6E0FBGZQ5P:b=6Hz6i3
 S1
-dC:/Users/mdesomma/Documents/lab2/simulation
-w1725845430
-8C:\Users\mdesomma\Documents\lab2\simulation\lab2TopSim.sv
-FC:\Users\mdesomma\Documents\lab2\simulation\lab2TopSim.sv
-!i122 0
-L0 1 55
-VDg1SIo80bB@j0V0VzS_@n1
-OT;L;2021.4;73
+Z2 dC:/Users/mdesomma/Documents/lab2/simulation
+w1725920076
+8C:/Users/mdesomma/Documents/lab2/simulation/ledSum.sv
+FC:/Users/mdesomma/Documents/lab2/simulation/ledSum.sv
+!i122 36
+L0 8 8
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OT;L;2021.4;73
 r1
 !s85 0
 31
-!s108 1725845431.000000
-!s107 C:\Users\mdesomma\Documents\lab2\simulation\lab2TopSim.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\mdesomma\Documents\lab2\simulation\lab2TopSim.sv|
+Z5 !s108 1726011876.000000
+!s107 C:/Users/mdesomma/Documents/lab2/simulation/ledSum.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mdesomma/Documents/lab2/simulation/ledSum.sv|
 !s101 -O0
 !i113 1
-o-work work -sv -O0
-tCvgOpt 0
-nlab2@top@sim
+Z6 o-work work -sv -O0
+Z7 tCvgOpt 0
+nled@sum
+vsegmentSwitcher
+R0
+R1
+!i10b 1
+!s100 j[<XYZhbXD5FAJ7_e[h=72
+ITN[:_i^zcOZ2<i;NTnIgA3
+S1
+R2
+w1725919457
+8C:/Users/mdesomma/Documents/lab2/simulation/segmentSwitcher.sv
+FC:/Users/mdesomma/Documents/lab2/simulation/segmentSwitcher.sv
+!i122 33
+L0 9 31
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/mdesomma/Documents/lab2/simulation/segmentSwitcher.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mdesomma/Documents/lab2/simulation/segmentSwitcher.sv|
+!s101 -O0
+!i113 1
+R6
+R7
+nsegment@switcher
+vsegmentSwitcher_tb
+R0
+R1
+!i10b 1
+!s100 o8Za?HTJLM:j2^YU;jYa`3
+I_gbBDn;7k2TQR?=H2d>dQ2
+S1
+R2
+w1726011872
+8C:/Users/mdesomma/Documents/lab2/simulation/segmentSwitcherTB.sv
+FC:/Users/mdesomma/Documents/lab2/simulation/segmentSwitcherTB.sv
+!i122 34
+L0 1 32
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/mdesomma/Documents/lab2/simulation/segmentSwitcherTB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mdesomma/Documents/lab2/simulation/segmentSwitcherTB.sv|
+!s101 -O0
+!i113 1
+R6
+R7
+nsegment@switcher_tb
+vsevenSegment
+R0
+R1
+!i10b 1
+!s100 V]`38eAAd[2dkdl[:5aGU1
+IUK9@fVfAF_PQ>;QL`_06^0
+S1
+R2
+w1725920631
+8C:/Users/mdesomma/Documents/lab2/simulation/sevenSegment.sv
+FC:/Users/mdesomma/Documents/lab2/simulation/sevenSegment.sv
+!i122 35
+L0 8 28
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/mdesomma/Documents/lab2/simulation/sevenSegment.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/mdesomma/Documents/lab2/simulation/sevenSegment.sv|
+!s101 -O0
+!i113 1
+R6
+R7
+nseven@segment
